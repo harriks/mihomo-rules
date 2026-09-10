@@ -4,3 +4,4 @@ hdhive-open.tgtodrive.top
 api.tmdb.org
 re0.me
 api.themoviedb.org
+api.thetvdb.com
