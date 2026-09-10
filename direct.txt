@@ -1,0 +1,11 @@
+# 公司
+symantec.com
+harrik.top
+hundsun.com
+
+# DDNS
+full:wangzaihua.duckdns.org
+
+# Google 国内服务
+services.googleapis.cn
+xn--ngstr-lra8j.com
