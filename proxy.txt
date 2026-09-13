@@ -3,6 +3,7 @@ uhdnow.com
 hdhive-open.tgtodrive.top
 tmdb.org
 re0.me
+api.themoviedb.org
 themoviedb.org
 thetvdb.com
 dian115.com
