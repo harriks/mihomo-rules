@@ -258,9 +258,9 @@ proxy-groups:
   - name: "📺 Bahamut"
     type: select
     proxies:
+      - "🚀 手动选择"
       - "🇼🇸 台湾节点"
       - "🇭🇰 香港节点"
-      - "🚀 手动选择"
       - "🎯 全球直连"
     use:
       - provider1
@@ -399,9 +399,9 @@ proxy-groups:
   - name: "🐟 漏网之鱼"
     type: select
     proxies:
+      - "🎯 全球直连"
       - "🚀 手动选择"
       - "♻️ 自动选择"
-      - "🎯 全球直连"
       - "🇭🇰 香港节点"
       - "🇺🇸 美国节点"
       - "🇯🇵 日本节点"
