@@ -482,11 +482,14 @@ proxy-groups:
 # 规则自上而下匹配，命中首条规则后停止。
 # no-resolve 用于 IP 类规则，避免为规则匹配额外触发 DNS 解析。
 rules:
+  - "RULE-SET,harriks-reject,REJECT"
   - "GEOSITE,private,🎯 全球直连"
   - "GEOIP,private,🎯 全球直连,no-resolve"
   - "RULE-SET,Custom_Direct_Domain,🎯 全球直连"
   - "RULE-SET,Custom_Direct_IP,🎯 全球直连,no-resolve"
   - "RULE-SET,Custom_Direct_Port,🎯 全球直连"
+  - "RULE-SET,harriks-direct,🎯 全球直连"
+  - "RULE-SET,harriks-proxy,🚀 手动选择"
   - "RULE-SET,Custom_Proxy_Domain,🚀 手动选择"
   - "RULE-SET,Custom_Proxy_IP,🚀 手动选择,no-resolve"
   - "GEOSITE,google-cn,🎯 全球直连"
@@ -589,3 +592,24 @@ rule-providers:
     type: http
     url: "https://cdn.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Steam_CDN_IP.mrs"
     format: mrs
+  
+  harriks-direct:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://cdn.jsdelivr.net/gh/harriks/mihomo-rules@main/direct.txt"
+    interval: 86400
+  
+  harriks-proxy:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://cdn.jsdelivr.net/gh/harriks/mihomo-rules@main/proxy.txt"
+    interval: 86400
+  
+  harriks-reject:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://cdn.jsdelivr.net/gh/harriks/mihomo-rules@main/reject.txt"
+    interval: 86400
